@@ -5,10 +5,10 @@ run-name: ${{ github.actor }} - ${{ github.ref_name }} - ${{ github.sha }}
 on:
   push:
     branches:
-      - vladisloveust
+      - your_name
   pull_request:
     branches:
-      - vladisloveust
+      - your_name
 
 env:
   PythonVersion: "3.8"
@@ -64,7 +64,7 @@ jobs:
     name: Docker CI
     runs-on: ubuntu-latest
     needs: python-ci
-    if: github.ref_name == 'vladisloveust'
+    if: github.ref_name == 'refs/heads/your_name'
 
     steps:
       - name: Download project artifacts
