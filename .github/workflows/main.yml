@@ -64,7 +64,7 @@ jobs:
     name: Docker CI
     runs-on: ubuntu-latest
     needs: python-ci
-    if: github.ref_name == 'refs/heads/your_name'
+    if: github.ref_name == 'your_name'
 
     steps:
       - name: Download project artifacts
@@ -91,7 +91,7 @@ jobs:
     name: Helm CI
     runs-on: ubuntu-latest
     needs: python-ci
-    if: github.ref_name == 'vladisloveust'
+    if: github.ref_name == 'your_name'
 
     steps:
       - name: Download project artifacts
